@@ -50,8 +50,8 @@ enum { MAX_MISSED_BCNS    =  20 };   // threshold for triggering rejoin requests
 enum { MAX_RXSYMS         = 100 };   // stop tracking beacon beyond this
 
 enum { LINK_CHECK_CONT    =  12 ,    // continue with this after reported dead link
-       LINK_CHECK_DEAD    =  24 ,    // after this UP frames and no response from NWK assume link is dead
-       LINK_CHECK_INIT    = -12 ,    // UP frame count until we inc datarate
+       LINK_CHECK_DEAD    =  32 ,    // after this UP frames and no response from NWK assume link is dead
+       LINK_CHECK_INIT    = -64 ,    // UP frame count until we inc datarate
        LINK_CHECK_OFF     =-128 };   // link check disabled
 
 enum { TIME_RESYNC        = 6*128 }; // secs
